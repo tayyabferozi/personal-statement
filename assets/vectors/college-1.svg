@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197.994" height="36.797" viewBox="0 0 197.994 36.797">
+	<g id="Group_3146" data-name="Group 3146" transform="translate(-140 -11596.336)">
+		<g id="logo" transform="translate(301.186 11596.336)">
+			<path id="logo_ne" data-name="logo ne" d="M0,1.3v9.108H24.06L13.1,0H1.3A1.3,1.3,0,0,0,0,1.3Z" transform="translate(11.866)" fill="#0dbdb8" />
+			<path id="logo_se" data-name="logo se" d="M9.106,0H0V24.061L10.4,13.1l0-11.8A1.3,1.3,0,0,0,9.106,0Z" transform="translate(26.403 11.864)" fill="#0dbdb8" />
+			<path id="logo_sw" data-name="logo sw" d="M24.061,9.1V0H0L10.958,10.4l11.8,0A1.3,1.3,0,0,0,24.061,9.1Z" transform="translate(0.879 26.391)" fill="#0dbdb8" />
+			<path id="logo_nw" data-name="logo nw" d="M1.3,24.062h9.1V0L0,10.958l0,11.8A1.3,1.3,0,0,0,1.3,24.062Z" transform="translate(0 0.876)" fill="#0dbdb8" />
+		</g>
+		<g id="type" transform="translate(140 11600.708)">
+			<path id="H" d="M21.119,11.117H5.638V.005L0,0V28.017H5.638V15.981h15.48V28.017h5.647V.005H21.119Z" transform="translate(29.785 0.015)" fill="#0dbdb8" />
+			<path id="E" d="M0,28.005H24.736L21.6,23.075H5.654v-7.1H21.1V11.227H5.654V4.815H21.576L24.646,0H0Z" transform="translate(125.912 0.02)" fill="#0dbdb8" />
+			<path id="C" d="M0,8.754V19.212c0,6,3.817,8.807,8.8,8.807l17.69,0L23.208,22.9H9.891c-2.829,0-4.062-1.023-4.062-4.189V9.219c0-3.061,1.038-4.255,4.137-4.255H23.347L26.5,0H8.827C2.962,0,0,3.566,0,8.754Z" transform="translate(0 0.013)" fill="#0dbdb8" />
+			<path id="S" d="M.223,7.279V8.625c0,5.459,3.34,7.542,6.683,7.556H18.636c1.218,0,2.208.2,2.208,2.262l0,2.379c-.031,1.85-.954,2.274-2.248,2.274H3.161L0,28.025H18.957c4.571,0,7.675-2.274,7.675-7.528v-1.93c0-5.079-2.884-7.479-7.354-7.479H8.077c-1.242,0-2.107-.339-2.107-2.178V6.973c0-1.566.593-2.138,2.04-2.138l14.7-.006L25.779,0,7.082.007C3.694.007.223,2.043.223,7.279Z" transform="translate(94.084)" fill="#0dbdb8" />
+			<path id="A" d="M6.278,28.011H0L13.284,0h5.588L32.184,28.008l-6.3,0L23.3,22.226H8.865L6.278,28.01Zm9.792-22.2L11,17.458H21.174Z" transform="translate(59.648 0.02)" fill="#0dbdb8" />
+		</g>
+	</g>
+</svg>
