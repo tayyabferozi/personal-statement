@@ -1,13 +1,10 @@
-document.addEventListener("scroll", function () {
-  let navbar = document.querySelector("#navbar");
-
-  let scrolledVal = document.querySelector("html").scrollTop;
-
-  if (scrolledVal > 0) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+var swiper = new Swiper(".testimonials-swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
 });
-
-AOS.init({ duration: 700, offset: 200 });

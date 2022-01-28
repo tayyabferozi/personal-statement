@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/utilities.css" />
 
@@ -29,7 +30,23 @@
             <a href="#">ABOUT</a>
             <a class="btn btn-primary" href="#">MY ACCOUNT</a>
           </div>
-          <div class="hamburger">todo</div>
+          <input
+            class="menu-icon sm-hide"
+            type="checkbox"
+            id="menu-icon"
+            name="menu-icon"
+          />
+          <label for="menu-icon" class="sm-hide"></label>
+          <nav class="sm-nav sm-hide">
+            <ul class="pt-5">
+              <li><a href="#">HOW IT WORKS</a></li>
+              <li><a href="#">GUARENTEES</a></li>
+              <li><a href="#">SAMPLES</a></li>
+              <li><a href="#">TOP REVIEWS</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">MY ACCOUNT</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </nav>
@@ -113,9 +130,10 @@
                   </select>
                 </div>
 
-                <div class="d-flex justify-content-center btn-wrap">
-                  <div class="d-flex justify-content-start">
+                <div class="d-flex justify-content-center btn-wrap mt-2">
+                  <div class="d-flex justify-content-start align-items-center">
                     <img
+                      class="calculate"
                       src="./assets/vectors/calculate-btn-left.svg"
                       alt="calculate"
                     />
@@ -405,7 +423,7 @@
         </div>
       </section>
 
-      <section id="discount">
+      <section id="discount" data-aos="fade-up">
         <div class="page-container">
           <div class="discount-main">
             <div class="container-fluid px-0">
@@ -425,7 +443,7 @@
         </div>
       </section>
 
-      <section id="testimonials">
+      <section id="testimonials" data-aos="fade-up">
         <div class="page-container">
           <div class="main">
             <div class="head text-center">
@@ -434,6 +452,169 @@
                 Our Clients send us bunch of smilies with our services and we
                 love them
               </p>
+            </div>
+
+            <div class="testimonials">
+              <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="img">
+                        <img
+                          class="user"
+                          src="./assets/img/testimonial-user.png"
+                          alt="user"
+                        />
+                        <img
+                          class="bg"
+                          src="./assets/vectors/testimonial-img-bg.svg"
+                          alt="testimonial-bg"
+                        />
+                      </div>
+                      <div class="body">
+                        <div class="tooltip">
+                          <div class="tooltip__arrow"></div>
+
+                          <div class="comment">
+                            We are very pleased with the way Besnik handled our
+                            purchase of a lake home. He was prompt, friendly,
+                            and very knowledgeable. He followed up on any and
+                            all concerns.
+                          </div>
+                          <div class="name">Becky Nelson</div>
+                          <div class="ratings">
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-no-fill.svg"
+                              alt="star-no-fill"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="img">
+                        <img
+                          class="user"
+                          src="./assets/img/testimonial-user.png"
+                          alt="user"
+                        />
+                        <img
+                          class="bg"
+                          src="./assets/vectors/testimonial-img-bg.svg"
+                          alt="testimonial-bg"
+                        />
+                      </div>
+                      <div class="body">
+                        <div class="tooltip">
+                          <div class="tooltip__arrow"></div>
+
+                          <div class="comment">
+                            We are very pleased with the way Besnik handled our
+                            purchase of a lake home. He was prompt, friendly,
+                            and very knowledgeable. He followed up on any and
+                            all concerns.
+                          </div>
+                          <div class="name">Becky Nelson</div>
+                          <div class="ratings">
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-no-fill.svg"
+                              alt="star-no-fill"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="img">
+                        <img
+                          class="user"
+                          src="./assets/img/testimonial-user.png"
+                          alt="user"
+                        />
+                        <img
+                          class="bg"
+                          src="./assets/vectors/testimonial-img-bg.svg"
+                          alt="testimonial-bg"
+                        />
+                      </div>
+                      <div class="body">
+                        <div class="tooltip">
+                          <div class="tooltip__arrow"></div>
+
+                          <div class="comment">
+                            We are very pleased with the way Besnik handled our
+                            purchase of a lake home. He was prompt, friendly,
+                            and very knowledgeable. He followed up on any and
+                            all concerns.
+                          </div>
+                          <div class="name">Becky Nelson</div>
+                          <div class="ratings">
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-fill.svg"
+                              alt="star-fill"
+                            />
+                            <img
+                              src="./assets/vectors/star-no-fill.svg"
+                              alt="star-no-fill"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -504,7 +685,7 @@
                 </div>
               </div>
               <div class="col-xl-4 pt-5 pt-xl-0">
-                <h3 class="mb-4">Professions/Degree</h3>
+                <h3 class="mb-4">Professions / Degree</h3>
                 <ul class="custom-list">
                   <li class="custom-list-item">Lorem Ipsum Dolor Sit Amet</li>
                   <li class="custom-list-item">Lorem Ipsum Dolor Sit</li>
@@ -539,7 +720,7 @@
           <h2 class="title">What makes Statement Pacer so special?</h2>
 
           <div class="container-fluid px-0">
-            <div class="row gx-5 gy-4">
+            <div class="row gx-sm-5 gy-4">
               <div class="col-lg-6">
                 <p class="small">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -618,19 +799,19 @@
         </div>
 
         <div class="colleges-container">
-          <div class="college">
+          <div class="college" data-aos="fade-up" data-aos-delay="100">
             <img src="./assets/vectors/college-1.svg" alt="college" />
           </div>
-          <div class="college">
+          <div class="college" data-aos="fade-up" data-aos-delay="200">
             <img src="./assets/vectors/college-2.svg" alt="college" />
           </div>
-          <div class="college">
+          <div class="college" data-aos="fade-up" data-aos-delay="300">
             <img src="./assets/vectors/college-3.svg" alt="college" />
           </div>
-          <div class="college">
+          <div class="college" data-aos="fade-up" data-aos-delay="400">
             <img src="./assets/vectors/college-4.svg" alt="college" />
           </div>
-          <div class="college">
+          <div class="college" data-aos="fade-up" data-aos-delay="500">
             <img src="./assets/vectors/college-5.svg" alt="college" />
           </div>
         </div>
@@ -916,15 +1097,6 @@
             </p>
           </div>
 
-          <!-- <div class="video-container">
-          <img class="video-img" src="./assets/img/video-img.png" alt="img" />
-          <div class="dark"></div>
-          <img
-            class="play-icon"
-            src="./assets/vectors/play-icon.svg"
-            alt="play"
-          />
-        </div> -->
           <div class="text-center mt-4">
             <img
               class="w-100"
@@ -940,7 +1112,13 @@
           <div class="container-fluid px-0">
             <div class="row">
               <div class="col-lg-6 col-md-5">
-                <!-- <img src="./assets/vectors/tips.svg" alt="tips" /> -->
+                <div class="tips-img-container">
+                  <img
+                    src="./assets/vectors/tips.svg"
+                    class="w-100 tips-img"
+                    alt="tips"
+                  />
+                </div>
               </div>
               <div class="col-lg-6 col-md-7 d-flex align-items-center">
                 <div class="text">
@@ -961,7 +1139,78 @@
       </section>
     </main>
 
+    <footer id="footer">
+      <div class="footer-nav">
+        <div class="logo">
+          <img src="./assets/vectors/logo.svg" alt="logo" />
+        </div>
+
+        <div class="nav">
+          <a href="#">HOW IT WORKS</a>
+          <a href="#">GUARENTEES</a>
+          <a href="#">SAMPLES</a>
+          <a href="#">TOP REVIEWS</a>
+          <a href="#">ABOUT</a>
+        </div>
+
+        <div class="social">
+          <a href="#">
+            <img src="./assets/vectors/fb-white.svg" alt="fb" />
+          </a>
+          <a href="#" class="ms-3">
+            <img src="./assets/vectors/insta-white.svg" alt="insta" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="container-fluid px-0">
+          <div class="row">
+            <div class="col">
+              <div class="contact-us">
+                <h4 class="title">CONTACT US</h4>
+                <a href="tel:+112456789789" class="contact-item">
+                  <img src="./assets/vectors/phone.svg" alt="phone" />
+                  +112456789789
+                </a>
+                <a
+                  href="mailto:support@statementpacer.com"
+                  class="contact-item"
+                >
+                  <img src="./assets/vectors/email.svg" alt="email" />
+                  support@statementpacer.com
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="payments">
+                <h4 class="title">PAYMENTS</h4>
+                <div class="imgs">
+                  <img src="./assets/vectors/visa.svg" alt="visa" />
+                  <img src="./assets/vectors/mastercard.svg" alt="mastercard" />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="secure">
+                <h4 class="title">SECURE</h4>
+                <div class="imgs">
+                  <img src="./assets/vectors/secure-1.svg" alt="secure" />
+                  <img src="./assets/vectors/secure-2.svg" alt="secure" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">&copy; 2021. All Rights Reserved</div>
+    </footer>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
