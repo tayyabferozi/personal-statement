@@ -204,7 +204,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  min-height: 1080px;
+  min-height: 950px;
 }
 
 @media screen and (max-width: 1460px) {
