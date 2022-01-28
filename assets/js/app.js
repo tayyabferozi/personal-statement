@@ -8,6 +8,8 @@ document.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("scrolled");
   }
+
+  document.querySelector("#preloader").remove();
 });
 
 AOS.init({ duration: 700, offset: 200 });
