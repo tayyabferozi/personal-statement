@@ -470,8 +470,14 @@ footer {
 }
 
 #hero .main .left .btns .btn {
-  font-size: 16px;
+  font-size: 26px;
   padding: 0.5rem 1.5rem;
+}
+
+@media screen and (max-width: 1650px) {
+  #hero .main .left .btns .btn {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1135px) {
@@ -486,13 +492,13 @@ footer {
 
 @media screen and (max-width: 1650px) {
   #hero .main .left .btns .btn.btn-accent {
-    width: 280px;
+    width: 200px;
   }
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1135px) {
   #hero .main .left .btns .btn.btn-accent {
-    width: 200px;
+    width: 160px;
   }
 }
 
