@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 27px;
   color: #1d1d1d;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -58,6 +60,13 @@ footer {
   }
 }
 
+strong {
+  font-family: "Kaushan Script", cursive;
+  color: #0dbdb8 !important;
+  font-size: inherit;
+  font-weight: 700;
+}
+
 .page-container {
   max-width: 1650px;
   margin-left: auto;
@@ -70,7 +79,7 @@ footer {
   top: 0;
   right: 0;
   z-index: 2;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: transparent;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -147,13 +156,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1240px) {
+  #navbar .nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
   #navbar .nav a {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1100px) {
   #navbar .nav a {
     font-size: 12px;
     margin-left: 20px;
@@ -192,6 +207,9 @@ footer {
   padding: 150px 0;
   position: relative;
   background: url("../img/bg-hero.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -204,10 +222,10 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  min-height: 950px;
+  min-height: 750px;
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 991px) {
   #hero {
     height: unset;
     display: block;
@@ -273,6 +291,7 @@ footer {
 #hero .page-container {
   position: relative;
   z-index: 1;
+  margin-top: 50px;
 }
 
 #hero .main {
@@ -339,8 +358,8 @@ footer {
 }
 
 #hero .main .left h1 {
-  margin-top: 2rem;
-  font-size: 72px;
+  margin-top: 1rem;
+  font-size: 60px;
   line-height: 1.2;
 }
 
@@ -396,7 +415,7 @@ footer {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 45px;
+  margin-top: 0.75rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -415,7 +434,6 @@ footer {
 
 #hero .main .left .custom-list .custom-list-item {
   width: 50%;
-  font-size: 27px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -437,7 +455,7 @@ footer {
 }
 
 #hero .main .left .btns {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 1650px) {
@@ -492,7 +510,7 @@ footer {
 
 @media screen and (max-width: 1650px) {
   #hero .main .left .btns .btn.btn-accent {
-    width: 200px;
+    width: 220px;
   }
 }
 
@@ -631,12 +649,6 @@ footer {
   text-align: right;
   font-size: 16px;
   padding: 0.5rem 1.5rem;
-}
-
-@media screen and (max-width: 1450px) {
-  #hero .main .right .card .btn {
-    padding-left: 50px;
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1379,7 +1391,7 @@ footer {
 
 #identity .jumbotron {
   background-color: #0dbdb8;
-  padding: 70px 56px;
+  padding: 45px 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1458,7 +1470,6 @@ footer {
 }
 
 #identity .jumbotron .btns {
-  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
