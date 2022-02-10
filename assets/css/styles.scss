@@ -713,7 +713,6 @@ strong {
 
       .text {
         font-size: 18px;
-        font-weight: bold;
 
         @media screen and (max-width: 1450px) {
           font-size: 14px;
@@ -1011,6 +1010,10 @@ strong {
   .title {
     margin-bottom: 70px;
   }
+
+  .small {
+    // text-align: justify !important;
+  }
 }
 
 #get-admission {
@@ -1164,19 +1167,19 @@ strong {
     }
 
     h3 {
-      font-size: 56px;
+      font-size: 36px;
 
       @media screen and (max-width: 1200px) {
         text-align: center;
       }
 
-      @media screen and (max-width: 767px) {
-        font-size: 44px;
-      }
+      // @media screen and (max-width: 767px) {
+      //   font-size: 44px;
+      // }
 
-      @media screen and (max-width: 625px) {
-        font-size: 38px;
-      }
+      // @media screen and (max-width: 625px) {
+      //   font-size: 38px;
+      // }
 
       @media screen and (max-width: 575px) {
         font-size: 30px;

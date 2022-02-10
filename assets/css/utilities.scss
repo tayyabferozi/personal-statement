@@ -343,10 +343,11 @@ select {
       height: 26.5px;
       content: url("../vectors/feature-list-item.svg");
       position: absolute;
-      top: 50%;
+      // top: 50%;
+      top: 14px;
       left: 0;
-      transform: translateY(-50%);
-
+      // transform: translateY(-50%);
+      //
       @media screen and (max-width: 1450px) {
         width: 24px;
         height: 26.5px;

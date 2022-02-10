@@ -898,7 +898,6 @@ strong {
 
 #how-it-works .steps .step .text {
   font-size: 18px;
-  font-weight: bold;
 }
 
 @media screen and (max-width: 1450px) {
@@ -1442,24 +1441,12 @@ strong {
 }
 
 #identity .jumbotron h3 {
-  font-size: 56px;
+  font-size: 36px;
 }
 
 @media screen and (max-width: 1200px) {
   #identity .jumbotron h3 {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #identity .jumbotron h3 {
-    font-size: 44px;
-  }
-}
-
-@media screen and (max-width: 625px) {
-  #identity .jumbotron h3 {
-    font-size: 38px;
   }
 }
 
