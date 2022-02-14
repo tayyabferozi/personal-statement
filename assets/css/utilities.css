@@ -157,6 +157,13 @@ h3 {
   font-family: "Arimo", sans-serif;
 }
 
+h1 *,
+h2 *,
+h3 * {
+  font-size: inherit;
+  font-family: inherit;
+}
+
 h2 {
   font-size: 64px;
   line-height: 1.15;
@@ -307,6 +314,8 @@ select {
 .btn.btn-primary {
   background: #0dbdb8;
   color: #fff !important;
+  -webkit-box-shadow: 4px 4px 20px rgba(10, 151, 146, 0.4);
+          box-shadow: 4px 4px 20px rgba(10, 151, 146, 0.4);
 }
 
 .btn.btn-primary:hover {
@@ -316,6 +325,8 @@ select {
 .btn.btn-accent {
   background: #ffb500;
   color: #4d4141 !important;
+  -webkit-box-shadow: 4px 4px 20px rgba(204, 148, 6, 0.4);
+          box-shadow: 4px 4px 20px rgba(204, 148, 6, 0.4);
 }
 
 .btn.btn-accent:hover {

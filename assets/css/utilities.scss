@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "./_colors.scss";
 
 :root {
   --swiper-theme-color: $color1;
@@ -141,6 +141,11 @@ h1,
 h2,
 h3 {
   font-family: "Arimo", sans-serif;
+
+  * {
+    font-size: inherit;
+    font-family: inherit;
+  }
 }
 
 h2 {
@@ -280,6 +285,7 @@ select {
   &.btn-primary {
     background: $color1;
     color: #fff !important;
+    box-shadow: 4px 4px 20px $color29;
 
     &:hover {
       background: $color13;
@@ -289,6 +295,7 @@ select {
   &.btn-accent {
     background: $color3;
     color: $color4 !important;
+    box-shadow: 4px 4px 20px $color30;
 
     &:hover {
       background: $color14;
