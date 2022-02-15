@@ -278,7 +278,7 @@
 			<path id="Path_262" data-name="Path 262" d="M425.658,247.794l1.81-3.7-.857-.419-1.22,2.5-5.164-5.164-.667.667Z" transform="translate(-412.643 126.209)" fill="#0dbdb8" />
 		</g>
 	</g>
-	<text id="Order_Completed" data-name="Order Completed" transform="translate(89.274 76.653)" fill="#fff" font-size="25" font-family="Poppins-Regular, Poppins" letter-spacing="0.02em">
+	<text id="Order_Completed" data-name="Order Completed" transform="translate(89.274 76.653)" fill="#fff" font-size="25" font-family="Poppins-Regular, Poppins, sans-serif" letter-spacing="0.02em">
 		<tspan x="0" y="0">
 			Order Completed
 		</tspan>

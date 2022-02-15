@@ -10,10 +10,13 @@ window.addEventListener("load", function () {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+    autoplay: true,
+    loop: true,
+    disableOnInteraction: false,
   });
 
   $("#faqs .question .q-statement").click(function () {
-    $this = $(this);
+    let $this = $(this);
     $this.parent().toggleClass("active");
     $this.siblings(".answer").slideToggle();
   });
@@ -21,9 +24,7 @@ window.addEventListener("load", function () {
   let demo = new CountUp("count-up", 5245);
   if (!demo.error) {
     demo.start();
-    console.log("STARTED");
   } else {
-    console.log("ERROR");
     console.error(demo.error);
   }
 });

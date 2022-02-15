@@ -10,16 +10,12 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 27px;
+  font-size: 16px;
   color: $color2;
   letter-spacing: 1px;
 
-  @media screen and (max-width: 1450px) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 767px) {
-    font-size: 18px;
+  @media screen and (max-width: 575px) {
+    font-size: 12px;
   }
 }
 
@@ -56,6 +52,10 @@ strong {
   max-width: 1650px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 992px) {
+    transform: scale(0.8);
+  }
 }
 
 #navbar {
@@ -76,14 +76,18 @@ strong {
   .logo {
     display: flex;
     align-items: center;
+    position: relative;
+    width: 210px;
+    height: 68px;
+    left: 0;
 
     img {
-      @media screen and (max-width: 1450px) {
-        width: 120px;
-      }
+      position: absolute;
+      width: 210px;
+      left: 0;
 
-      @media screen and (max-width: 760px) {
-        width: 80px;
+      &.inverted {
+        opacity: 0;
       }
     }
   }
@@ -155,7 +159,13 @@ strong {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     .logo {
-      filter: invert(100%);
+      img {
+        opacity: 0;
+
+        &.inverted {
+          opacity: 1;
+        }
+      }
     }
 
     a {
@@ -334,14 +344,6 @@ strong {
 
         .custom-list-item {
           width: 50%;
-
-          @media screen and (max-width: 1450px) {
-            font-size: 18px;
-          }
-
-          @media screen and (max-width: 1135px) {
-            font-size: 14px;
-          }
 
           @media screen and (max-width: 575px) {
             width: 100%;
@@ -559,9 +561,12 @@ strong {
 
 #why-us {
   background-color: $color5;
-  padding-top: 60px;
-  padding-bottom: 170px;
   overflow: hidden;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .page-container {
   }
@@ -620,12 +625,7 @@ strong {
       }
 
       p {
-        font-size: 18px;
         color: $color6;
-
-        @media screen and (max-width: 1450px) {
-          font-size: 16px;
-        }
       }
     }
   }
@@ -635,8 +635,12 @@ strong {
   position: relative;
   overflow: hidden;
   background-color: $color7;
-  padding-top: 130px;
-  padding-bottom: 160px;
+  // padding-top: 130px;
+  // padding-bottom: 160px;
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .head {
     @media screen and (max-width: 575px) {
@@ -727,7 +731,11 @@ strong {
 }
 
 #benefits {
-  padding-top: 75px;
+  // padding-top: 75px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+  }
 
   .benefits-container {
     display: flex;
@@ -852,9 +860,6 @@ strong {
 }
 
 #testimonials {
-  padding: 117px 0;
-  background-color: $color9;
-
   .main {
     max-width: 933px;
     margin-left: auto;
@@ -874,8 +879,8 @@ strong {
 
         .img {
           position: relative;
-          width: 186px;
-          height: 186px;
+          width: 276px;
+          height: 276px;
           margin-left: auto;
           margin-right: auto;
 
@@ -917,6 +922,7 @@ strong {
           }
 
           .comment {
+            font-size: 20px;
             color: $color26;
             font-weight: 300;
 
@@ -947,7 +953,12 @@ strong {
 #help {
   position: relative;
   background-color: $color7;
-  padding: 64px 0;
+  // padding: 64px 0;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .page-container {
     position: relative;
@@ -1004,8 +1015,13 @@ strong {
 }
 
 #special {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  // padding-top: 70px;
+  // padding-bottom: 70px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .title {
     margin-bottom: 70px;
@@ -1018,8 +1034,13 @@ strong {
 
 #get-admission {
   background-color: $color9;
-  padding-top: 54px;
-  padding-bottom: 78px;
+  // padding-top: 54px;
+  // padding-bottom: 78px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .head {
     justify-content: space-between;
@@ -1076,8 +1097,13 @@ strong {
 #services {
   position: relative;
   background: $color7;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  // padding-top: 100px;
+  // padding-bottom: 80px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   * {
     color: #fff;
@@ -1127,8 +1153,13 @@ strong {
 }
 
 #identity {
-  padding-top: 100px;
-  padding-bottom: 70px;
+  // padding-top: 100px;
+  // padding-bottom: 70px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .jumbotron {
     background-color: $color1;
@@ -1149,6 +1180,11 @@ strong {
 
     * {
       color: #fff;
+    }
+
+    .vector {
+      width: 240px;
+      height: 240px;
     }
 
     .circle {
@@ -1208,11 +1244,15 @@ strong {
       @media screen and (max-width: 575px) {
         transform: translateX(44px);
       }
+
+      .btn {
+        font-size: 20px;
+      }
     }
   }
 
   .main {
-    margin-top: 170px;
+    margin-top: 130px;
 
     .title-sm {
       font-size: 30px;
@@ -1336,12 +1376,17 @@ strong {
 
 #faqs {
   position: relative;
-  padding-top: 116px;
-  padding-bottom: 125px;
+  // padding-top: 116px;
+  // padding-bottom: 125px;
   background: $color7;
   background-image: url(../vectors/bg-faq.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .dots {
     position: absolute;
@@ -1368,7 +1413,7 @@ strong {
   }
 
   h2 {
-    margin: 50px 0 24px;
+    margin: 10px 0 24px;
   }
 
   .question {
@@ -1385,6 +1430,7 @@ strong {
 
       .text {
         font-weight: 600;
+        font-size: 22px;
       }
 
       img {
@@ -1407,8 +1453,13 @@ strong {
 }
 
 #guarentees {
-  padding-top: 150px;
-  padding-bottom: 112px;
+  // padding-top: 150px;
+  // padding-bottom: 112px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .text {
     max-width: 1500px;
@@ -1450,9 +1501,14 @@ strong {
 }
 
 #tips {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  // padding-top: 75px;
+  // padding-bottom: 75px;
   background: $color11;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .tips-img-container {
     display: flex;
@@ -1474,19 +1530,10 @@ strong {
     max-width: 670px;
     margin-left: auto;
 
-    h3 {
+    h2 {
       position: relative;
-      font-size: 46px;
       color: $color12;
       font-family: "poppins", sans-serif;
-
-      @media screen and (max-width: 1450px) {
-        font-size: 34px;
-      }
-
-      @media screen and (max-width: 767px) {
-        font-size: 28px;
-      }
 
       &::after {
         content: "";
@@ -1502,8 +1549,6 @@ strong {
 
     p {
       margin-top: 25px;
-      font-size: 21px;
-      line-height: 1.7;
 
       @media screen and (max-width: 767px) {
         font-size: 18px;
@@ -1517,15 +1562,34 @@ strong {
   padding: 120px 0 60px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 60px;
+    // padding-top: 60px;
   }
 
   * {
     color: #fff;
   }
 
+  .logo {
+    width: 210px;
+    height: 64px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer-links {
+    display: block;
+    padding: 60px 0;
+
+    a {
+      padding: 0.5rem 0;
+    }
+  }
+
   .footer-nav,
-  .footer-main {
+  .footer-main,
+  .footer-links {
     position: relative;
 
     &::after {
