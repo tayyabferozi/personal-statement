@@ -1214,10 +1214,6 @@ strong {
   }
 }
 
-#help h3 {
-  font-size: 40px;
-}
-
 @media screen and (max-width: 1450px) {
   #help h3 {
     font-size: 28px;
