@@ -1627,6 +1627,8 @@ strong {
 
 #identity .cards .card img.left-img {
   margin-right: 33px;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 1400px) {
