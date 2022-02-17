@@ -106,6 +106,7 @@ strong {
     }
 
     a {
+      position: relative;
       margin-left: 60px;
       font-weight: 500;
       transition: 0.4s ease;
@@ -142,6 +143,16 @@ strong {
       &.btn {
         margin-left: 40px;
       }
+
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: -0.5rem;
+      //   height: 1px;
+      //   width: 100%;
+      //   background-color: $color1;
+      // }
     }
   }
 
@@ -253,6 +264,10 @@ strong {
     position: relative;
     z-index: 1;
     margin-top: 50px;
+
+    @media screen and (min-width: 992) {
+      margin-top: -18px;
+    }
   }
 
   .main {
@@ -1563,7 +1578,12 @@ strong {
 
 #footer {
   background: $color7;
-  padding: 120px 0 60px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   @media screen and (max-width: 767px) {
     // padding-top: 60px;
@@ -1587,7 +1607,13 @@ strong {
     padding: 60px 0;
 
     a {
-      padding: 0.5rem 0;
+      padding: 0.25rem 0;
+      display: block;
+      transition: 0.4s ease;
+
+      &:hover {
+        color: $color1;
+      }
     }
   }
 

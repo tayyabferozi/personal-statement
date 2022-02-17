@@ -139,6 +139,7 @@ strong {
 }
 
 #navbar .nav a {
+  position: relative;
   margin-left: 60px;
   font-weight: 500;
   -webkit-transition: 0.4s ease;
@@ -304,6 +305,12 @@ strong {
   position: relative;
   z-index: 1;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 992) {
+  #hero .page-container {
+    margin-top: -18px;
+  }
 }
 
 #hero .main {
@@ -1887,7 +1894,14 @@ strong {
 
 #footer {
   background: #1f2e3c;
-  padding: 120px 0 60px;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 992px) {
+  #footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 #footer * {
@@ -1909,7 +1923,14 @@ strong {
 }
 
 #footer .footer-links a {
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
+  display: block;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#footer .footer-links a:hover {
+  color: #0dbdb8;
 }
 
 #footer .footer-nav,
