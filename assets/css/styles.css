@@ -1328,7 +1328,8 @@ strong {
 }
 
 #get-admission .colleges-container .college {
-  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 #get-admission .colleges-container .college:first-child {
@@ -1337,6 +1338,26 @@ strong {
 
 #get-admission .colleges-container .college:last-child {
   margin-right: 0;
+}
+
+#get-admission .colleges-container .college:nth-child(1) img {
+  width: 120px;
+}
+
+#get-admission .colleges-container .college:nth-child(2) img {
+  width: 90px;
+}
+
+#get-admission .colleges-container .college:nth-child(3) img {
+  width: 70px;
+}
+
+#get-admission .colleges-container .college:nth-child(4) img {
+  width: 50px;
+}
+
+#get-admission .colleges-container .college:nth-child(5) img {
+  width: 60px;
 }
 
 #services {
