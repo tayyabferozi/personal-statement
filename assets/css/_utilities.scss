@@ -1,4 +1,26 @@
-@import "./_colors.scss";
+%light-text-dim {
+  opacity: 0.7;
+  color: $color6;
+}
+
+%p-section {
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+%section-img {
+  @media screen and (max-width: 991px) {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-img {
+  @extend %section-img;
+}
 
 :root {
   --swiper-theme-color: $color1;
@@ -171,10 +193,15 @@ p {
 }
 
 select,
-input {
+input,
+textarea {
   &:focus {
     outline: none;
   }
+}
+
+textarea {
+  resize: none;
 }
 
 select {
@@ -221,6 +248,11 @@ select {
   font-weight: 900 !important;
 }
 
+.title-sm {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
 .text-white {
   * {
     color: #fff;
@@ -241,6 +273,14 @@ select {
 
 .text-light-1 {
   color: $color6;
+}
+
+.op-70 {
+  opacity: 0.7;
+}
+
+.text-light-dim {
+  @extend %light-text-dim;
 }
 
 .btn {
@@ -284,6 +324,12 @@ select {
     background: transparent;
     border: 1px solid #fff;
     color: #fff !important;
+  }
+
+  &.btn-transparent-dark {
+    background: transparent;
+    border: 1px solid $color2;
+    color: $color2 !important;
   }
 }
 
@@ -437,6 +483,10 @@ select {
   @media screen and (max-width: 768px) {
     width: 60px;
     height: 60px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 20px;
   }
 }
 @keyframes border-transform {
@@ -596,6 +646,15 @@ select {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .logo {
+    left: 24px;
+  }
+  .sm-nav {
+    right: 24px;
+  }
+}
+
 .sm-nav {
   transform: translateY(-4px);
 
@@ -609,12 +668,12 @@ select {
   top: 38px;
 
   @media screen and (max-width: 767px) {
-    top: 28px;
-    right: 50px;
+    top: 34px;
+    right: 46px;
   }
 
   @media screen and (max-width: 575px) {
-    right: 45px;
+    right: 40px;
   }
 }
 
@@ -652,6 +711,59 @@ select {
       left: 50%;
       box-shadow: 0 65px 110px $color27;
       // box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.primary-cards {
+  margin-top: 64px;
+  position: relative;
+
+  img {
+    width: 40%;
+  }
+
+  .card-bg {
+    position: absolute;
+
+    &.left {
+      left: -576px;
+    }
+
+    &.right {
+      right: -360px;
+    }
+  }
+
+  .card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 43px;
+    text-align: center;
+    margin: 0.5rem 0;
+    z-index: 1;
+    height: 100%;
+
+    @media screen and (max-width: 1225px) {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
+    h3 {
+      margin: 46px 0;
+
+      @media screen and (max-width: 1450px) {
+        margin: 30px 0;
+      }
+
+      @media screen and (max-width: 1225px) {
+        font-size: 23px;
+      }
+    }
+
+    p {
+      color: $color6;
     }
   }
 }
