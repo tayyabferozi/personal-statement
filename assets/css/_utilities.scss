@@ -283,6 +283,11 @@ select {
   @extend %light-text-dim;
 }
 
+.c-btn {
+  background-color: transparent;
+  border: none;
+}
+
 .btn {
   border: none;
   padding: 12px 40px;
@@ -292,7 +297,9 @@ select {
   transition: 0.4s ease;
 
   &:hover {
-    transform: translateY(-7px);
+    @media screen and (min-width: 768px) {
+      transform: translateY(-7px);
+    }
   }
 
   @media screen and (max-width: 575px) {

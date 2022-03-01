@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  #why-us, #how-it-works, #benefits, #discount, #special, #get-admission, #services, #identity, #faqs, #guarentees, #tips, #footer, #our-story, #relax, #crew, #contact-form, #inquiry, #more-info, #privacy-policy, #satisfied-clients {
+  #why-us, #how-it-works, #benefits, #discount, #special, #get-admission, #services, #identity, #faqs, #guarentees, #tips, #footer, #our-story, #relax, #crew, #contact-form, #inquiry, #more-info, #privacy-policy, #praisers, #satisfied-clients {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -112,7 +112,7 @@ body {
   width: 100%;
   height: 100%;
   background: #fff;
-  z-index: 3;
+  z-index: 6;
 }
 
 #loader {
@@ -298,6 +298,11 @@ select {
   opacity: 0.7;
 }
 
+.c-btn {
+  background-color: transparent;
+  border: none;
+}
+
 .btn {
   border: none;
   padding: 12px 40px;
@@ -308,9 +313,11 @@ select {
   transition: 0.4s ease;
 }
 
-.btn:hover {
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
+@media screen and (min-width: 768px) {
+  .btn:hover {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -2404,6 +2411,9 @@ strong {
   display: -ms-flexbox;
   display: flex;
   margin: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -3247,6 +3257,107 @@ strong {
   background-color: rgba(13, 189, 184, 0.1);
 }
 
+#praisers .swiper {
+  width: 100%;
+}
+
+#praisers .swiper-slide {
+  width: 870px;
+  padding: 80px 0 40px;
+}
+
+#praisers .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1023px) {
+  #praisers .swiper-slide {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #praisers .swiper-slide {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #praisers .swiper-slide {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #praisers .swiper-slide {
+    width: 100%;
+  }
+}
+
+#praisers .praiser-card {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  padding: 90px 80px 36px;
+  -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 767px) {
+  #praisers .praiser-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#praisers .praiser-card img.client {
+  position: absolute;
+  width: 120px;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#praisers .praiser-card .name {
+  font-size: 24px;
+  color: #0f2b4a;
+}
+
+#praisers .praiser-card p {
+  color: #576b81;
+  margin-top: 2rem;
+}
+
+#praisers .swiper-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#praisers .swiper-nav .btn {
+  color: #fff;
+  background-color: #0dbdb8;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+}
+
+#praisers .swiper-nav .btn:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
 #satisfied-clients .card {
   position: relative;
   overflow: hidden;
@@ -3322,6 +3433,153 @@ strong {
 #satisfied-clients .card:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+#writers .swiper-slides {
+  overflow: hidden;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#writers .swiper {
+  overflow: visible;
+}
+
+@media screen and (max-width: 575px) {
+  #writers .swiper {
+    padding-top: 10rem;
+  }
+}
+
+#writers .swiper .swiper-slide {
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#writers .swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+#writers .writer-card {
+  position: relative;
+  border-radius: 70px;
+  border-bottom-right-radius: 0 !important;
+  padding: 40px;
+  background-image: url("../img/writer-bg.png");
+  background-size: cover;
+}
+
+@media screen and (max-width: 575px) {
+  #writers .writer-card {
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#writers .writer-card .client-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+@media screen and (max-width: 575px) {
+  #writers .writer-card .client-img {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -110%);
+            transform: translate(-50%, -110%);
+  }
+}
+
+#writers .writer-card * {
+  color: #fff;
+}
+
+#writers .writer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 70px;
+  border-bottom-right-radius: 0 !important;
+}
+
+@media screen and (max-width: 575px) {
+  #writers .writer-card::before {
+    border-radius: 40px;
+  }
+}
+
+#writers .writer-card .main {
+  position: relative;
+}
+
+#writers .writer-card .reviews {
+  margin-top: 0.5rem;
+}
+
+#writers .writer-card .reviews img {
+  width: 22px;
+}
+
+#writers .writer-card .text {
+  position: relative;
+  margin: 36px 0;
+  padding: 50px 0;
+}
+
+#writers .writer-card .text .quotes {
+  font-size: 100px;
+  position: absolute;
+  line-height: 1;
+}
+
+#writers .writer-card .text .quotes.start {
+  top: 0;
+  left: 0;
+}
+
+#writers .writer-card .text .quotes.end {
+  bottom: -70px;
+  right: 0;
+}
+
+#writers .writer-card .subject {
+  text-align: center;
+  color: #0dbdb8;
+  font-size: 20px;
+}
+
+#writers .swiper-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#writers .swiper-nav img {
+  width: 30px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {

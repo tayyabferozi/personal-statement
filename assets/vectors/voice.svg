@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="341.613" height="48.513" viewBox="0 0 341.613 48.513">
+	<defs>
+		<linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+			<stop offset="0" stop-color="#0dbdb8" />
+			<stop offset="1" stop-color="#075f5c" />
+		</linearGradient>
+	</defs>
+	<g id="Group_10441" data-name="Group 10441" transform="translate(-860.65 -1228.5)">
+		<path id="Icon_open-audio-spectrum" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(860.65 1228.5)" fill="url(#linear-gradient)" />
+		<path id="Icon_open-audio-spectrum-2" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(910.511 1228.5)" fill="url(#linear-gradient)" />
+		<path id="Icon_open-audio-spectrum-3" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(960.372 1228.5)" fill="url(#linear-gradient)" />
+		<path id="Icon_open-audio-spectrum-4" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(1010.233 1228.5)" fill="url(#linear-gradient)" />
+		<path id="Icon_open-audio-spectrum-5" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(1060.093 1228.5)" fill="url(#linear-gradient)" />
+		<path id="Icon_open-audio-spectrum-6" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(1109.954 1228.5)" fill="url(#linear-gradient)" />
+		<path id="Icon_open-audio-spectrum-7" data-name="Icon open-audio-spectrum" d="M24.257,0V48.513h6.064V0ZM12.128,6.064V42.449h6.064V6.064Zm24.257,6.064V36.385h6.064V12.128ZM0,18.192V30.321H6.064V18.192Z" transform="translate(1159.815 1228.5)" fill="url(#linear-gradient)" />
+	</g>
+</svg>
