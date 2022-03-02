@@ -271,9 +271,20 @@ strong {
   text-align: center;
 
   .text {
-    max-width: 748px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+
+    p {
+      font-size: 20px;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
   }
 }
 
@@ -1549,20 +1560,17 @@ strong {
 
   .footer-nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 44px;
 
-    @media screen and (max-width: 991px) {
-      flex-direction: column;
-
-      & > * {
-        margin: 1rem 0;
-      }
+    & > * {
+      margin: 2rem 0;
     }
 
     .nav {
-      @media screen and (max-width: 610px) {
+      @media screen and (max-width: 950px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1570,15 +1578,16 @@ strong {
       }
 
       a {
-        font-size: 15px;
-        margin: 0 30px;
+        font-size: 12px;
+        margin: 0 24px;
 
         @media screen and (max-width: 1200px) {
-          margin: 0 10px;
+          margin: 0 8px;
         }
 
-        @media screen and (max-width: 610px) {
-          margin: 0.5rem 0;
+        @media screen and (max-width: 950px) {
+          font-size: 9px;
+          margin: 19px 0;
         }
       }
     }
@@ -1607,7 +1616,7 @@ strong {
 
       img {
         @media screen and (max-width: 1600px) {
-          transform: scale(0.7);
+          transform: scale(0.6);
         }
       }
     }
@@ -1653,6 +1662,14 @@ strong {
         display: flex;
         justify-content: center;
 
+        @media screen and (max-width: 500px) {
+          flex-wrap: wrap;
+        }
+
+        & > img {
+          flex-shrink: 0;
+        }
+
         @media screen and (max-width: 791px) {
           justify-content: flex-start;
 
@@ -1665,14 +1682,14 @@ strong {
 
     .payments {
       img {
-        margin: 0 30px;
+        margin: 0 24x;
       }
     }
 
     .secure {
       .imgs {
         img {
-          margin: 0 45px;
+          margin: 0 36px;
         }
       }
     }
@@ -1863,6 +1880,12 @@ strong {
         width: 30px;
       }
     }
+
+    .btn {
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
   }
 }
 
@@ -2027,10 +2050,7 @@ strong {
 
   table {
     min-width: 720px;
-
-    @media screen and (max-width: 991px) {
-      margin: 2rem 0;
-    }
+    margin: 2rem 0;
 
     tr {
       td {
@@ -2404,5 +2424,18 @@ strong {
 
   @media screen and (max-width: 575px) {
     height: 280px;
+  }
+}
+
+#footer,
+#privacy-policy {
+  padding: 4rem 0;
+
+  .page-container {
+    transform: unset;
+
+    @media screen and (min-width: 992px) {
+      width: 80%;
+    }
   }
 }
