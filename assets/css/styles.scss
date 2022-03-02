@@ -7,7 +7,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -18,6 +17,10 @@
   @media screen and (max-width: 575px) {
     font-size: 12px;
   }
+}
+
+ul {
+  list-style-type: none;
 }
 
 nav,
@@ -1959,6 +1962,8 @@ strong {
     .item {
       max-width: 340px;
 
+      height: calc(100% - 51px);
+
       @media screen and (max-width: 600px) {
         margin-left: auto;
         margin-right: auto;
@@ -1973,40 +1978,40 @@ strong {
       p {
         margin-top: 0.5rem;
       }
+    }
 
-      .ending-line {
+    .ending-line {
+      position: relative;
+      opacity: 0.2;
+      margin-top: 1.5rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 44px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 4px dotted $color1;
+      }
+
+      .circle {
         position: relative;
-        opacity: 0.2;
-        margin-top: 1.5rem;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: $color1;
 
-        &::before {
+        &::after {
           content: "";
           position: absolute;
-          right: 0;
-          left: 44px;
-          top: 50%;
-          transform: translateY(-50%);
-          border-top: 4px dotted $color1;
-        }
-
-        .circle {
-          position: relative;
-          width: 34px;
-          height: 34px;
           border-radius: 50%;
-          background-color: $color1;
-
-          &::after {
-            content: "";
-            position: absolute;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            left: 50%;
-            top: 50%;
-            background-color: $color3;
-            transform: translate(-50%, -50%);
-          }
+          width: 24px;
+          height: 24px;
+          left: 50%;
+          top: 50%;
+          background-color: $color3;
+          transform: translate(-50%, -50%);
         }
       }
     }
@@ -2014,7 +2019,51 @@ strong {
 }
 
 #privacy-policy {
+  @media screen and (min-width: 992px) {
+    padding-bottom: 2rem;
+  }
+
   @extend %p-section;
+
+  table {
+    min-width: 720px;
+
+    @media screen and (max-width: 991px) {
+      margin: 2rem 0;
+    }
+
+    tr {
+      td {
+        &:nth-child(1) {
+          min-width: 120px;
+        }
+
+        &:nth-child(2) {
+          min-width: 240px;
+        }
+        &:nth-child(1) {
+          min-width: 120px;
+        }
+      }
+    }
+  }
+
+  ol,
+  ul {
+    margin: 0.5rem 0;
+  }
+
+  ol {
+    padding-left: 1rem;
+  }
+
+  h3 {
+    margin: 2rem 0 1rem;
+  }
+
+  p {
+    margin-bottom: 0.75rem;
+  }
 
   img {
     width: 40%;
@@ -2100,6 +2149,7 @@ strong {
       left: 50%;
       top: 0;
       transform: translate(-50%, -50%);
+      border-radius: 50%;
     }
 
     .name {
@@ -2262,6 +2312,7 @@ strong {
       left: 0;
       transform: translate(-50%, -50%);
       width: 150px;
+      border-radius: 50%;
 
       @media screen and (max-width: 575px) {
         top: 0;

@@ -895,10 +895,39 @@ select {
   color: #474f62;
 }
 
+.table-container {
+  overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 3px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  padding: 20px 24px;
+}
+
+table thead tr th {
+  background-color: #0dbdb8;
+  color: #fff;
+}
+
+table thead tr th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
@@ -912,6 +941,10 @@ select {
   * {
     font-size: 12px;
   }
+}
+
+ul {
+  list-style-type: none;
 }
 
 nav,
@@ -3174,6 +3207,7 @@ strong {
 
 #problem .items .item {
   max-width: 340px;
+  height: calc(100% - 51px);
 }
 
 @media screen and (max-width: 600px) {
@@ -3193,13 +3227,13 @@ strong {
   margin-top: 0.5rem;
 }
 
-#problem .items .item .ending-line {
+#problem .items .ending-line {
   position: relative;
   opacity: 0.2;
   margin-top: 1.5rem;
 }
 
-#problem .items .item .ending-line::before {
+#problem .items .ending-line::before {
   content: "";
   position: absolute;
   right: 0;
@@ -3210,7 +3244,7 @@ strong {
   border-top: 4px dotted #0dbdb8;
 }
 
-#problem .items .item .ending-line .circle {
+#problem .items .ending-line .circle {
   position: relative;
   width: 34px;
   height: 34px;
@@ -3218,7 +3252,7 @@ strong {
   background-color: #0dbdb8;
 }
 
-#problem .items .item .ending-line .circle::after {
+#problem .items .ending-line .circle::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -3229,6 +3263,51 @@ strong {
   background-color: #ffb500;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 992px) {
+  #privacy-policy {
+    padding-bottom: 2rem;
+  }
+}
+
+#privacy-policy table {
+  min-width: 720px;
+}
+
+@media screen and (max-width: 991px) {
+  #privacy-policy table {
+    margin: 2rem 0;
+  }
+}
+
+#privacy-policy table tr td:nth-child(1) {
+  min-width: 120px;
+}
+
+#privacy-policy table tr td:nth-child(2) {
+  min-width: 240px;
+}
+
+#privacy-policy table tr td:nth-child(1) {
+  min-width: 120px;
+}
+
+#privacy-policy ol,
+#privacy-policy ul {
+  margin: 0.5rem 0;
+}
+
+#privacy-policy ol {
+  padding-left: 1rem;
+}
+
+#privacy-policy h3 {
+  margin: 2rem 0 1rem;
+}
+
+#privacy-policy p {
+  margin-bottom: 0.75rem;
 }
 
 #privacy-policy img {
@@ -3317,6 +3396,7 @@ strong {
   top: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 #praisers .praiser-card .name {
@@ -3491,6 +3571,7 @@ strong {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 150px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 575px) {

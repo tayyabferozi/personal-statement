@@ -774,3 +774,36 @@ select {
     }
   }
 }
+
+.table-container {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+}
+table {
+  border-collapse: collapse;
+
+  td,
+  th {
+    padding: 20px 24px;
+  }
+
+  thead {
+    tr {
+      th {
+        background-color: $color1;
+        color: #fff;
+
+        &:first-child {
+          border-top-left-radius: 10px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 10px;
+        }
+      }
+    }
+  }
+}

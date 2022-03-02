@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap-utilities.css" />
     <link rel="stylesheet" href="./assets/css/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/mediaelementplayer.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>Personal Statement</title>
@@ -30,16 +31,15 @@
     <nav id="navbar">
       <div class="page-container">
         <div class="d-flex justify-content-between">
-          <div class="logo">
+          <a href="./index.html" class="logo">
             <img src="./assets/img/logo.png" alt="logo" />
             <img class="inverted" src="./assets/img/logo-dark.png" alt="logo" />
-          </div>
+          </a>
           <div class="nav">
-            <a href="#">HOW IT WORKS</a>
-            <a href="#">GUARENTEES</a>
-            <a href="#">SAMPLES</a>
-            <a href="#">TOP REVIEWS</a>
-            <a href="#">ABOUT</a>
+            <a href="./how-it-works.html">HOW IT WORKS</a>
+            <a href="./samples.html">SAMPLES</a>
+            <a href="./success-stories.html">SUCCESS STORIES</a>
+            <a href="./about-us.html">ABOUT US</a>
             <a class="btn btn-primary" href="#">MY ACCOUNT</a>
           </div>
           <input
@@ -140,28 +140,80 @@
                 <div class="praiser-card">
                   <img
                     class="client"
-                    src="./assets/img/testimonial-user-1.png"
+                    src="./assets/img/amanda.jpg"
                     alt="user"
                   />
 
-                  <h4 class="name">Becky Nelson</h4>
+                  <h4 class="name">Amanda</h4>
 
                   <p>
-                    "We are very pleased with the way Besnik handled our
-                    purchase of a lake home. He was prompt, friendly, and very
-                    knowledgeable. He followed up on any and all concerns."
+                    "The best thing that I loved about your service is the
+                    timely response on queries and expert writers, which can
+                    easily be seen from their work. I recommend this service"
                   </p>
 
+                  <div class="media-wrapper mt-3">
+                    <audio
+                      id="player1"
+                      preload="none"
+                      controls
+                      style="max-width: 100%"
+                    >
+                      <source
+                        src="./assets/audio/amanda.mp3"
+                        type="audio/mp3"
+                      />
+                    </audio>
+                  </div>
+
+                  <!-- <button class="c-btn play mt-2 text-light-dim">
+                    Click to play
+                  </button> -->
+
+                  <div class="reviews mt-4">
+                    <img src="./assets/vectors/star-fill.svg" alt="star" />
+                    <img src="./assets/vectors/star-fill.svg" alt="star" />
+                    <img src="./assets/vectors/star-fill.svg" alt="star" />
+                    <img src="./assets/vectors/star-fill.svg" alt="star" />
+                    <img src="./assets/vectors/star-fill.svg" alt="star" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="praiser-card">
                   <img
-                    style="max-width: 340px"
-                    class="mt-3 d-block mx-auto w-100"
-                    src="./assets/vectors/voice.svg"
-                    alt="voice"
+                    class="client"
+                    src="./assets/img/juliet.jpg"
+                    alt="user"
                   />
 
-                  <butto class="c-btn play mt-2 text-light-dim">
+                  <h4 class="name">Juliet</h4>
+
+                  <p>
+                    "Well, this is my third order in a row. I already got my
+                    admission essay written, along with the scholarship grant,
+                    and recently I received the letter of recommendation. I must
+                    say that their service is fast and reliable. I hope to order
+                    in future as well"
+                  </p>
+
+                  <div class="media-wrapper mt-3">
+                    <audio
+                      id="player1"
+                      preload="none"
+                      controls
+                      style="max-width: 100%"
+                    >
+                      <source
+                        src="./assets/audio/juliet.mp3"
+                        type="audio/mp3"
+                      />
+                    </audio>
+                  </div>
+
+                  <!-- <button class="c-btn play mt-2 text-light-dim">
                     Click to play
-                  </button>
+                  </button> -->
 
                   <div class="reviews mt-4">
                     <img src="./assets/vectors/star-fill.svg" alt="star" />
@@ -174,73 +226,37 @@
               </div>
               <div class="swiper-slide">
                 <div class="praiser-card">
-                  <img
-                    class="client"
-                    src="./assets/img/testimonial-user-1.png"
-                    alt="user"
-                  />
+                  <img class="client" src="./assets/img/daisy.jpg" alt="user" />
 
-                  <h4 class="name">Becky Nelson</h4>
+                  <h4 class="name">Daisy</h4>
 
                   <p>
-                    "We are very pleased with the way Besnik handled our
-                    purchase of a lake home. He was prompt, friendly, and very
-                    knowledgeable. He followed up on any and all concerns."
+                    "Thanks for helping me out! I have received my document and
+                    happy with the results. I will surely refer my friends as
+                    well"
                   </p>
 
-                  <img
-                    style="max-width: 340px"
-                    class="mt-3 d-block mx-auto w-100"
-                    src="./assets/vectors/voice.svg"
-                    alt="voice"
-                  />
-
-                  <butto class="c-btn play mt-2 text-light-dim">
-                    Click to play
-                  </button>
-
-                  <div class="reviews mt-4">
-                    <img src="./assets/vectors/star-fill.svg" alt="star" />
-                    <img src="./assets/vectors/star-fill.svg" alt="star" />
-                    <img src="./assets/vectors/star-fill.svg" alt="star" />
-                    <img src="./assets/vectors/star-fill.svg" alt="star" />
-                    <img src="./assets/vectors/star-no-fill.svg" alt="star" />
+                  <div class="media-wrapper mt-3">
+                    <audio
+                      id="player1"
+                      preload="none"
+                      controls
+                      style="max-width: 100%"
+                    >
+                      <source src="./assets/audio/daisy.mp3" type="audio/mp3" />
+                    </audio>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="praiser-card">
-                  <img
-                    class="client"
-                    src="./assets/img/testimonial-user-1.png"
-                    alt="user"
-                  />
 
-                  <h4 class="name">Becky Nelson</h4>
-
-                  <p>
-                    "We are very pleased with the way Besnik handled our
-                    purchase of a lake home. He was prompt, friendly, and very
-                    knowledgeable. He followed up on any and all concerns."
-                  </p>
-
-                  <img
-                    style="max-width: 340px"
-                    class="mt-3 d-block mx-auto w-100"
-                    src="./assets/vectors/voice.svg"
-                    alt="voice"
-                  />
-
-                  <butto class="c-btn play mt-2 text-light-dim">
+                  <!-- <button class="c-btn play mt-2 text-light-dim">
                     Click to play
-                  </button>
+                  </button> -->
 
                   <div class="reviews mt-4">
                     <img src="./assets/vectors/star-fill.svg" alt="star" />
                     <img src="./assets/vectors/star-fill.svg" alt="star" />
                     <img src="./assets/vectors/star-fill.svg" alt="star" />
                     <img src="./assets/vectors/star-fill.svg" alt="star" />
-                    <img src="./assets/vectors/star-no-fill.svg" alt="star" />
+                    <img src="./assets/vectors/star-fill.svg" alt="star" />
                   </div>
                 </div>
               </div>
@@ -475,6 +491,7 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/mediaelement-and-player.min.js"></script>
 
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/app.js"></script>
