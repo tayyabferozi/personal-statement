@@ -1599,23 +1599,31 @@ strong {
   }
 }
 
-#hero .main .right .card select {
-  padding: 14px 25px;
+#hero .main .right .card input,
+#hero .main .right .card select,
+#hero .main .right .card option {
   color: #4d4141;
+}
+
+#hero .main .right .card select,
+#hero .main .right .card input {
+  padding: 14px 25px;
   width: 100%;
   font-size: 16px;
   border-radius: 6px;
 }
 
 @media screen and (max-width: 1450px) {
-  #hero .main .right .card select {
+  #hero .main .right .card select,
+  #hero .main .right .card input {
     padding: 14px 18px;
     background-position-y: 20px;
   }
 }
 
 @media screen and (max-width: 1135px) {
-  #hero .main .right .card select {
+  #hero .main .right .card select,
+  #hero .main .right .card input {
     font-size: 14px;
     padding: 14px;
   }

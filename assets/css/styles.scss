@@ -531,9 +531,15 @@ strong {
           }
         }
 
-        select {
-          padding: 14px 25px;
+        input,
+        select,
+        option {
           color: $color4;
+        }
+
+        select,
+        input {
+          padding: 14px 25px;
           width: 100%;
           font-size: 16px;
           border-radius: 6px;
