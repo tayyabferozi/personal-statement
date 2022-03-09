@@ -11,6 +11,9 @@ window.addEventListener("load", function () {
     }
   });
 
+  let jugaruString =
+    "bottom: 21px; right: 23px; opacity: 1; transition: opacity 0.5s ease 0s; box-sizing: border-box; direction: ltr; position: fixed !important; z-index: 16000160 !important";
+
   $("#preloader").remove();
   AOS.init({ duration: 700, offset: 200 });
 
@@ -42,6 +45,13 @@ window.addEventListener("load", function () {
   document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
   });
+
+  setTimeout(function () {
+    for (let i = 0; i <= 9999; i++) {
+      $("#gb-widget-" + i).css("bottom", 68);
+      console.log("#gb-widget-" + i);
+    }
+  }, 500);
 });
 
 var Tawk_API = Tawk_API || {},
@@ -61,21 +71,3 @@ function toggleTawkTo() {
 }
 
 $(".btn").click(toggleTawkTo);
-
-var tlJsHost =
-  window.location.protocol == "https:"
-    ? "https://secure.trust-provider.com/"
-    : "http://www.trustlogo.com/";
-document.write(
-  unescape(
-    "%3Cscript src='" +
-      tlJsHost +
-      "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"
-  )
-);
-
-TrustLogo(
-  "https://www.positivessl.com/images/seals/positivessl_trust_seal_md_167x42.png",
-  "POSDV",
-  "none"
-);
