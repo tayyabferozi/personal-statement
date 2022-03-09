@@ -45,17 +45,39 @@ window.addEventListener("load", function () {
   document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
   });
-
-  setTimeout(function () {
-    for (let i = 0; i <= 9999; i++) {
-      $("#gb-widget-" + i).css("bottom", 68);
-      console.log("#gb-widget-" + i);
-    }
-  }, 500);
 });
+
+function customize_tawk_widget() {
+  // var cur_bottom = jQuery("iframe[title='chat widget']")
+  //   .eq(0)
+  //   .css("bottom"); /*Get the default style*/
+  // var cur_right = jQuery("iframe[title='chat widget']")
+  //   .eq(0)
+  //   .css("right"); /*Get the default style*/
+  // if (cur_bottom == def_tawk_bottom && cur_right == def_tawk_right) {
+  //   /*Check if the default style exists then remove it and add my custom style*/
+  //   jQuery("iframe[title='chat widget']").eq(0).css({ right: "", bottom: "" });
+  //   jQuery("iframe[title='chat widget']").eq(0).addClass("custom-chat-widget");
+  //   clearInterval(customize_tawk);
+  // }
+  // $("[title='chat widget']").css("right", "auto");
+  // $("[title='chat widget']").css("left", 10);
+}
 
 var Tawk_API = Tawk_API || {},
   Tawk_LoadStart = new Date();
+
+Tawk_API.onLoad = function () {
+  /*Only for mobile version*/
+  if (
+    /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    var customize_tawk = setInterval(customize_tawk_widget, 100);
+  }
+};
+
 (function () {
   var s1 = document.createElement("script"),
     s0 = document.getElementsByTagName("script")[0];

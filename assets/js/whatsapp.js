@@ -4,7 +4,7 @@
     whatsapp: "+44 7415 783672", // WhatsApp number
     call_to_action: "Message us", // Call to action
     button_color: "#FF6550", // Color of button
-    position: "right", // Position may be 'right' or 'left'
+    position: "left", // Position may be 'right' or 'left'
     order: "facebook,whatsapp", // Order of buttons
   };
   var proto = document.location.protocol,
