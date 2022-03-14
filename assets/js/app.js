@@ -76,10 +76,11 @@ var Tawk_API = Tawk_API || {},
 
 Tawk_API.onChatStarted = function () {
   dataLayerPush("Chat Started");
-  console.log("Chat started");
   fbq("track", "Lead");
 };
-
+Tawk_API.onChatMaximized = function () {
+  fbq("track", "Contact");
+};
 (function () {
   var s1 = document.createElement("script"),
     s0 = document.getElementsByTagName("script")[0];
@@ -95,7 +96,6 @@ function toggleTawkTo() {
 }
 
 $(".btn.tt-toggle").click(function () {
-  fbq("track", "Contact");
   toggleTawkTo();
 });
 // $(".btn:not(.no-tt)").click(toggleTawkTo);
