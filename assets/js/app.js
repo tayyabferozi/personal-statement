@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  // fbq("track", "ViewContent");
+  fbq("track", "View Content");
 
   document.addEventListener("scroll", function () {
     let navbar = document.querySelector("#navbar");
