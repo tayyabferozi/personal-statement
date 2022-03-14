@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  fbq("track", "ViewContent");
+  // fbq("track", "ViewContent");
 
   document.addEventListener("scroll", function () {
     let navbar = document.querySelector("#navbar");
@@ -94,8 +94,8 @@ function toggleTawkTo() {
   Tawk_API.toggle();
 }
 
-$(".btn.tt-toggle").click(toggleTawkTo);
-$(".btn").click(function () {
+$(".btn.tt-toggle").click(function () {
   fbq("track", "Contact");
+  toggleTawkTo();
 });
 // $(".btn:not(.no-tt)").click(toggleTawkTo);
