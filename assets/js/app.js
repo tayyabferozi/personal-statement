@@ -1,4 +1,6 @@
 window.addEventListener("load", function () {
+  fbq("track", "ViewContent");
+
   document.addEventListener("scroll", function () {
     let navbar = document.querySelector("#navbar");
 
@@ -72,6 +74,12 @@ window.addEventListener("load", function () {
 var Tawk_API = Tawk_API || {},
   Tawk_LoadStart = new Date();
 
+Tawk_API.onChatStarted = function () {
+  dataLayerPush("Chat Started");
+  console.log("Chat started");
+  fbq("track", "Lead");
+};
+
 (function () {
   var s1 = document.createElement("script"),
     s0 = document.getElementsByTagName("script")[0];
@@ -87,4 +95,7 @@ function toggleTawkTo() {
 }
 
 $(".btn.tt-toggle").click(toggleTawkTo);
+$(".btn").click(function () {
+  fbq("track", "Contact");
+});
 // $(".btn:not(.no-tt)").click(toggleTawkTo);

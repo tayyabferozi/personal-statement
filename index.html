@@ -38,6 +38,43 @@
       })(window, document, "script", "dataLayer", "GTM-W23NNVL");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "408636824406847");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=408636824406847&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -58,8 +95,7 @@
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <div class="cursor"></div>
 
@@ -451,7 +487,11 @@
                       src="./assets/vectors/calculate-btn-left.svg"
                       alt="calculate"
                     />
-                    <div class="btn btn-primary">Order Now!</div>
+                    <a
+                      href="https://login.statementpacer.com/"
+                      class="btn btn-primary"
+                      >Order Now!</a
+                    >
                   </div>
                 </div>
               </div>
@@ -760,7 +800,9 @@
               <div
                 class="d-flex justify-content-center justify-content-sm-start align-items-center mt-2"
               >
-                <div class="btn btn-accent fw-600">ORDER YOUR COPY NOW</div>
+                <button class="btn btn-accent fw-600 tt-toggle">
+                  ORDER YOUR COPY NOW
+                </button>
                 <img
                   class="ms-1"
                   src="./assets/vectors/order-btn-right.svg"
@@ -788,7 +830,7 @@
                 >
                   <input type="email" placeholder="Enter email address" />
 
-                  <button class="ms-3 btn btn-accent fw-600">Submit</button>
+                  <a href="https://login.statementpacer.com/" class="ms-3 btn btn-accent fw-600">Submit</a>
                 </div>
               </div>
             </div>
@@ -1355,11 +1397,15 @@
               </h3>
 
               <div class="btns d-flex">
-                <button class="btn btn-accent me-0 me-md-3">
+                <button class="btn btn-accent me-0 me-md-3 tt-toggle">
                   FREE INQUIRY
                 </button>
                 <div class="d-flex justify-content-end align-items-center">
-                  <button class="btn btn-transparent">ORDER NOW</button>
+                  <a
+                    href="https://login.statementpacer.com/login"
+                    class="btn btn-transparent"
+                    >ORDER NOW</a
+                  >
                   <img
                     src="./assets/vectors/read-more-right.svg"
                     alt="read-more"
