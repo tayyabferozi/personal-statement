@@ -11,9 +11,6 @@ window.addEventListener("load", function () {
     }
   });
 
-  let jugaruString =
-    "bottom: 21px; right: 23px; opacity: 1; transition: opacity 0.5s ease 0s; box-sizing: border-box; direction: ltr; position: fixed !important; z-index: 16000160 !important";
-
   $("#preloader").remove();
   AOS.init({ duration: 700, offset: 200 });
 
@@ -45,38 +42,35 @@ window.addEventListener("load", function () {
   document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
   });
-});
 
-function customize_tawk_widget() {
-  // var cur_bottom = jQuery("iframe[title='chat widget']")
-  //   .eq(0)
-  //   .css("bottom"); /*Get the default style*/
-  // var cur_right = jQuery("iframe[title='chat widget']")
-  //   .eq(0)
-  //   .css("right"); /*Get the default style*/
-  // if (cur_bottom == def_tawk_bottom && cur_right == def_tawk_right) {
-  //   /*Check if the default style exists then remove it and add my custom style*/
-  //   jQuery("iframe[title='chat widget']").eq(0).css({ right: "", bottom: "" });
-  //   jQuery("iframe[title='chat widget']").eq(0).addClass("custom-chat-widget");
-  //   clearInterval(customize_tawk);
-  // }
-  // $("[title='chat widget']").css("right", "auto");
-  // $("[title='chat widget']").css("left", 10);
-}
+  //  <!-- Your Chat Plugin code -->
+
+  var chatbox = document.getElementById("fb-customer-chat");
+  chatbox.setAttribute("page_id", "102000559086229");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  // <!-- Your SDK code -->
+
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: "v13.0",
+    });
+  };
+
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+});
 
 var Tawk_API = Tawk_API || {},
   Tawk_LoadStart = new Date();
-
-Tawk_API.onLoad = function () {
-  /*Only for mobile version*/
-  if (
-    /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
-      navigator.userAgent
-    )
-  ) {
-    var customize_tawk = setInterval(customize_tawk_widget, 100);
-  }
-};
 
 (function () {
   var s1 = document.createElement("script"),
@@ -92,4 +86,5 @@ function toggleTawkTo() {
   Tawk_API.toggle();
 }
 
-$(".btn").click(toggleTawkTo);
+$(".btn.tt-toggle").click(toggleTawkTo);
+// $(".btn:not(.no-tt)").click(toggleTawkTo);
