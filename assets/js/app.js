@@ -1,6 +1,4 @@
 window.addEventListener("load", function () {
-  // fbq("track", "View Content");
-
   document.addEventListener("scroll", function () {
     let navbar = document.querySelector("#navbar");
 
@@ -74,14 +72,6 @@ window.addEventListener("load", function () {
 var Tawk_API = Tawk_API || {},
   Tawk_LoadStart = new Date();
 
-// Tawk_API.onChatMessageVisitor = function () {
-//   // dataLayerPush("Chat Started");
-//   fbq("track", "Contact");
-// };
-// Tawk_API.onChatMaximized = function () {
-//   fbq("track", "Lead");
-// };
-
 window.Tawk_API = window.Tawk_API || {};
 var hasContacted = false;
 window.Tawk_API.onChatMessageVisitor = function () {
@@ -90,9 +80,6 @@ window.Tawk_API.onChatMessageVisitor = function () {
     fbq("track", "Contact");
   }
 };
-// window.Tawk_API.onChatStarted = function () {
-//   fbq("track", "Lead");
-// };
 
 (function () {
   var s1 = document.createElement("script"),
