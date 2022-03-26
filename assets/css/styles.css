@@ -414,8 +414,8 @@ select {
           transform: translateY(-50%);
 }
 
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
+#navbar [type="checkbox"]:checked,
+#navbar [type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
@@ -923,6 +923,10 @@ table thead tr th:first-child {
 
 table thead tr th:last-child {
   border-top-right-radius: 10px;
+}
+
+del {
+  text-decoration: line-through;
 }
 
 * {
@@ -1576,6 +1580,20 @@ strong {
   }
 }
 
+#hero .main .right .card .badge {
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: 600;
+  background-color: #0dbdb8;
+  color: #fff;
+}
+
+#hero .main .right .card del {
+  font-size: 24px;
+  color: #cc9406;
+  font-weight: 600;
+}
+
 #hero .main .right .card h2 {
   font-size: 26px;
   text-align: center;
@@ -1587,26 +1605,30 @@ strong {
   }
 }
 
-#hero .main .right .card .select-container {
+#hero .main .right .card .select-container,
+#hero .main .right .card input[type="text"] {
+  display: block;
   margin-top: 30px;
   border-radius: 6px;
   background: #fff;
+  border: none;
 }
 
 @media screen and (max-width: 1450px) {
-  #hero .main .right .card .select-container {
+  #hero .main .right .card .select-container,
+  #hero .main .right .card input[type="text"] {
     margin-top: 20px;
   }
 }
 
-#hero .main .right .card input,
+#hero .main .right .card input[type="text"],
 #hero .main .right .card select,
 #hero .main .right .card option {
   color: #4d4141;
 }
 
 #hero .main .right .card select,
-#hero .main .right .card input {
+#hero .main .right .card input[type="text"] {
   padding: 14px 25px;
   width: 100%;
   font-size: 16px;
@@ -1615,7 +1637,7 @@ strong {
 
 @media screen and (max-width: 1450px) {
   #hero .main .right .card select,
-  #hero .main .right .card input {
+  #hero .main .right .card input[type="text"] {
     padding: 14px 18px;
     background-position-y: 20px;
   }
@@ -1623,7 +1645,7 @@ strong {
 
 @media screen and (max-width: 1135px) {
   #hero .main .right .card select,
-  #hero .main .right .card input {
+  #hero .main .right .card input[type="text"] {
     font-size: 14px;
     padding: 14px;
   }

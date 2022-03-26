@@ -396,10 +396,12 @@ select {
   transform: translateY(-50%);
 }
 
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
+#navbar {
+  [type="checkbox"]:checked,
+  [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
 }
 .menu-icon:checked + label,
 .menu-icon:not(:checked) + label {
@@ -806,4 +808,8 @@ table {
       }
     }
   }
+}
+
+del {
+  text-decoration: line-through;
 }

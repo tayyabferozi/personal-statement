@@ -508,9 +508,19 @@ strong {
           border-radius: 30px;
         }
 
-        // @media screen and (max-width: 1200px) {
-        //   width: 40%;
-        // }
+        .badge {
+          border-radius: 5px;
+          padding: 0.5rem;
+          font-weight: 600;
+          background-color: $color1;
+          color: #fff;
+        }
+
+        del {
+          font-size: 24px;
+          color: $color14;
+          font-weight: 600;
+        }
 
         h2 {
           font-size: 26px;
@@ -521,24 +531,27 @@ strong {
           }
         }
 
-        .select-container {
+        .select-container,
+        input[type="text"] {
+          display: block;
           margin-top: 30px;
           border-radius: 6px;
           background: #fff;
+          border: none;
 
           @media screen and (max-width: 1450px) {
             margin-top: 20px;
           }
         }
 
-        input,
+        input[type="text"],
         select,
         option {
           color: $color4;
         }
 
         select,
-        input {
+        input[type="text"] {
           padding: 14px 25px;
           width: 100%;
           font-size: 16px;
@@ -629,9 +642,6 @@ strong {
   overflow: hidden;
 
   @extend %p-section;
-
-  .page-container {
-  }
 
   .head {
     max-width: 80%;
@@ -2152,10 +2162,6 @@ strong {
     @media screen and (max-width: 575px) {
       width: 100%;
     }
-  }
-
-  // .swiper-slide:not(.swiper-slide-visible) {
-  .swiper-slide {
   }
 
   .praiser-card {
