@@ -929,6 +929,74 @@ del {
   text-decoration: line-through;
 }
 
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #0dbdb8;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1306,9 +1374,9 @@ strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -1582,16 +1650,23 @@ strong {
 
 #hero .main .right .card .badge {
   border-radius: 5px;
-  padding: 0.5rem;
   font-weight: 600;
+  text-align: center;
   background-color: #0dbdb8;
   color: #fff;
+  font-size: 16px;
+  display: block;
+  padding: 0 0.5rem;
 }
 
 #hero .main .right .card del {
   font-size: 24px;
-  color: #cc9406;
+  color: #1d1d1d;
   font-weight: 600;
+}
+
+#hero .main .right .card .total-price {
+  font-size: 32px;
 }
 
 #hero .main .right .card h2 {
@@ -1664,8 +1739,9 @@ strong {
 #hero .main .right .card .btn {
   margin: 0.5rem 6px;
   text-align: right;
-  font-size: 16px;
+  font-size: 24px;
   padding: 0.5rem 1.5rem;
+  background-color: #e23b3b;
 }
 
 @media screen and (max-width: 575px) {
