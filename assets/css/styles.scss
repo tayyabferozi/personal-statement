@@ -2461,3 +2461,18 @@ strong {
     }
   }
 }
+
+#discount-wrap {
+  transition: 0.4s ease;
+
+  &.hide {
+    opacity: 0;
+  }
+}
+#total-price {
+  transition: 0.4s ease;
+
+  &.hide {
+    transform: translateY(-2rem);
+  }
+}

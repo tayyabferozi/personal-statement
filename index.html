@@ -98,6 +98,11 @@
 
     <div id="fb-root"></div>
 
+    <a target="_blank" href="https://wa.me/447729232382" id="whatsapp-chat">
+      <img src="./assets/img/whatsapp.png" alt="whatsapp" />
+      <h1>Get Instant Quote</h1>
+    </a>
+
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat"></div>
 
@@ -293,8 +298,8 @@
                 </div>
 
                 <div class="select-container">
-                  <select name="statement" id="statement">
-                    <option value="">Number of pages</option>
+                  <select name="statement" id="pages">
+                    <!-- <option value="">Number of pages</option> -->
                     <option value="1" selected="">275 words / 1 page</option>
                     <option value="2">550 words / 2 pages</option>
                     <option value="3">825 words / 3 pages</option>
@@ -345,7 +350,7 @@
                     <option value="48">13200 words / 48 pages</option>
                     <option value="49">13475 words / 49 pages</option>
                     <option value="50">13750 words / 50 pages</option>
-                    <option value="51">14025 words / 51 pages</option>
+                    <!-- <option value="51">14025 words / 51 pages</option>
                     <option value="52">14300 words / 52 pages</option>
                     <option value="53">14575 words / 53 pages</option>
                     <option value="54">14850 words / 54 pages</option>
@@ -494,13 +499,16 @@
                     <option value="197">54175 words / 197 pages</option>
                     <option value="198">54450 words / 198 pages</option>
                     <option value="199">54725 words / 199 pages</option>
-                    <option value="200">55000 words / 200 pages</option>
+                    <option value="200">55000 words / 200 pages</option> -->
                   </select>
                 </div>
 
-                <div class="d-flex justify-content-end align-items-center mt-3">
+                <div
+                  id="discount-wrap"
+                  class="d-flex justify-content-end align-items-center mt-3"
+                >
                   <div class="badge me-3">15% OFF</div>
-                  <del>£ 12.00</del>
+                  <del id="without-discount-price">£ 12.00</del>
                 </div>
 
                 <div
@@ -509,11 +517,15 @@
                   <div class="d-flex align-items-center">
                     <label class="checkbox-container"
                       >I am a new customer
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        id="new-customer"
+                        type="checkbox"
+                        checked="checked"
+                      />
                       <span class="checkmark"></span>
                     </label>
                   </div>
-                  <h2 class="total-price ms-2">£ 10.00</h2>
+                  <h2 id="total-price" class="total-price ms-2">£ 10.00</h2>
                 </div>
 
                 <div class="d-flex justify-content-center btn-wrap mt-2">

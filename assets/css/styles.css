@@ -997,6 +997,36 @@ del {
   transform: rotate(45deg);
 }
 
+#whatsapp-chat {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+  background-color: #29a71a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  border-radius: 18px;
+}
+
+#whatsapp-chat * {
+  color: #fff;
+}
+
+#whatsapp-chat img {
+  width: 50px;
+}
+
+@media screen and (max-width: 350px) {
+  #whatsapp-chat h1 {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3823,5 +3853,24 @@ strong {
   #privacy-policy .page-container {
     width: 80%;
   }
+}
+
+#discount-wrap {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#discount-wrap.hide {
+  opacity: 0;
+}
+
+#total-price {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#total-price.hide {
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
 }
 /*# sourceMappingURL=styles.css.map */

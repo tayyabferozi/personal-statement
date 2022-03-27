@@ -1,5 +1,8 @@
 import { CountUp } from "./countUp.min.js";
 
+let selectedPages = 1;
+let amountOfOnePage = 12;
+
 window.addEventListener("load", function () {
   var swiper = new Swiper(".testimonials-swiper", {
     navigation: {
@@ -26,5 +29,41 @@ window.addEventListener("load", function () {
     demo.start();
   } else {
     console.error(demo.error);
+  }
+
+  $("#pages").change(function (e) {
+    selectedPages = parseInt(e.target.value);
+
+    updatePrice();
+  });
+
+  let $price = $("#total-price");
+  let isNewCustomerChecked = true;
+
+  $("#new-customer").change(function (e) {
+    let isNewCustomerChecked = e.target.checked;
+    let $discount = $("#discount-wrap");
+
+    if (isNewCustomerChecked) {
+      $discount.removeClass("hide");
+      $price.removeClass("hide");
+    } else {
+      $discount.addClass("hide");
+      $price.addClass("hide");
+    }
+    updatePrice();
+  });
+
+  updatePrice();
+
+  function updatePrice() {
+    let totalPrice = selectedPages * amountOfOnePage;
+
+    $("#without-discount-price").html(`$ ${totalPrice.toFixed(2)}`);
+    if (isNewCustomerChecked) {
+      $price.html(`$ ${(totalPrice - totalPrice * 0.15).toFixed(2)}`);
+    } else {
+      $price.html(`$ ${totalPrice.toFixed(2)}`);
+    }
   }
 });
