@@ -41,7 +41,7 @@ window.addEventListener("load", function () {
   let isNewCustomerChecked = true;
 
   $("#new-customer").change(function (e) {
-    let isNewCustomerChecked = e.target.checked;
+    isNewCustomerChecked = e.target.checked;
     let $discount = $("#discount-wrap");
 
     if (isNewCustomerChecked) {
@@ -59,11 +59,11 @@ window.addEventListener("load", function () {
   function updatePrice() {
     let totalPrice = selectedPages * amountOfOnePage;
 
-    $("#without-discount-price").html(`$ ${totalPrice.toFixed(2)}`);
+    $("#without-discount-price").html(`£ ${totalPrice.toFixed(2)}`);
     if (isNewCustomerChecked) {
-      $price.html(`$ ${(totalPrice - totalPrice * 0.15).toFixed(2)}`);
+      $price.html(`£ ${(totalPrice - totalPrice * 0.15).toFixed(2)}`);
     } else {
-      $price.html(`$ ${totalPrice.toFixed(2)}`);
+      $price.html(`£ ${totalPrice.toFixed(2)}`);
     }
   }
 });
